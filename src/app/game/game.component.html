@@ -18,10 +18,10 @@
         <!-- Card Stack -->
        
 <img [ngStyle]="{'right.px':i *5}" *ngFor="let c of [0,1,2,3]; let i = index ;" 
-src="/assets/img/playing_cards-master/card_cover.png" >
+src="assets/img/playing_cards-master/card_cover.png" >
 
 <img  (click)="takeCard()" class="top-card" style="right:25px" 
-src="/assets/img/playing_cards-master/card_cover.png" >
+src="assets/img/playing_cards-master/card_cover.png" >
 
 <!-- Stack for played Cards -->
 
@@ -30,7 +30,7 @@ src="/assets/img/playing_cards-master/card_cover.png" >
 <!-- Current Card (Animation) -->
 
 <img  (click)="takeCard()" *ngIf="pickCardAnimation"  class="pick-card" style="right: 25px" 
-src="/assets/img/playing_cards-master/{{ currentCard }}.png" >
+src="assets/img/playing_cards-master/{{ currentCard }}.png" >
 
 
     </div>
